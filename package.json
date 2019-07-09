@@ -1,0 +1,23 @@
+{
+  "name": "single-page-react-parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate with ReactJS and ParcelJS for single pages",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "stevaras",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
+    "@babel/preset-react": "^7.0.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.3"
+  }
+}
