@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
-    "test": "jest"
+    "test": "jest",
+    "test:eslint": "eslint src/ --ext .js --ext .jsx",
+    "pretest": "npm run test:eslint"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -20,6 +25,8 @@
   "author": "stevaras",
   "license": "ISC",
   "dependencies": {
+    "babel-eslint": "^10.0.2",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -30,6 +37,11 @@
     "babel-jest": "^24.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
     "jest": "^24.8.0",
     "jest-environment-enzyme": "^7.0.2",
     "jest-enzyme": "^7.0.2",

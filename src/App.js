@@ -1,13 +1,11 @@
 import React from 'react';
-import { ToggleButtonContainer } from './containers';
+import { DummyContainer } from './containers';
 import './App.scss';
 
-const App = () => {
-  return (
-    <div className="app">
-      <ToggleButtonContainer />
-    </div>
-  );
-};
+const App = () => (
+  <div className="app">
+    <DummyContainer />
+  </div>
+);
 
 export default App;

@@ -1,1 +1,2 @@
-export { default as ToggleButton } from './ToggleButton';
+export { default as DummyComponent } from './DummyComponent';
+export { default as DummyHookComponent } from './DummyHookComponent';
